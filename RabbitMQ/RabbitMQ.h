@@ -14,6 +14,8 @@ FOUNDATION_EXPORT double RabbitMQVersionNumber;
 //! Project version string for RabbitMQ.
 FOUNDATION_EXPORT const unsigned char RabbitMQVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <RabbitMQ/PublicHeader.h>
-
+#import <amqp.h>
+#import <amqp_framing.h>
+#import <amqp_ssl_socket.h>
+#import <amqp_tcp_socket.h>
 

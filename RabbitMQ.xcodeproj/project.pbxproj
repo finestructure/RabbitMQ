@@ -10,6 +10,14 @@
 		5A02461A1BC273F800E07172 /* RabbitMQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0246191BC273F800E07172 /* RabbitMQ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A0246211BC273F900E07172 /* RabbitMQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0246161BC273F800E07172 /* RabbitMQ.framework */; settings = {ASSET_TAGS = (); }; };
 		5A0246261BC273F900E07172 /* RabbitMQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0246251BC273F900E07172 /* RabbitMQTests.m */; };
+		5A0246381BC274F500E07172 /* amqp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0246331BC274F500E07172 /* amqp.h */; settings = {ASSET_TAGS = (); }; };
+		5A0246391BC274F500E07172 /* amqp_framing.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0246341BC274F500E07172 /* amqp_framing.h */; settings = {ASSET_TAGS = (); }; };
+		5A02463A1BC274F500E07172 /* amqp_ssl_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0246351BC274F500E07172 /* amqp_ssl_socket.h */; settings = {ASSET_TAGS = (); }; };
+		5A02463B1BC274F500E07172 /* amqp_tcp_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0246361BC274F500E07172 /* amqp_tcp_socket.h */; settings = {ASSET_TAGS = (); }; };
+		5A02463C1BC274F500E07172 /* librabbitmq.4.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0246371BC274F500E07172 /* librabbitmq.4.1.1.dylib */; settings = {ASSET_TAGS = (); }; };
+		5A0246401BC2758200E07172 /* amqp-ext.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A02463E1BC2758200E07172 /* amqp-ext.c */; settings = {ASSET_TAGS = (); }; };
+		5A0246411BC2758200E07172 /* amqp-ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A02463F1BC2758200E07172 /* amqp-ext.h */; settings = {ASSET_TAGS = (); }; };
+		5A0246421BC276FE00E07172 /* librabbitmq.4.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0246371BC274F500E07172 /* librabbitmq.4.1.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,13 @@
 		5A0246201BC273F900E07172 /* RabbitMQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RabbitMQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0246251BC273F900E07172 /* RabbitMQTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RabbitMQTests.m; sourceTree = "<group>"; };
 		5A0246271BC273F900E07172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A0246331BC274F500E07172 /* amqp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amqp.h; sourceTree = "<group>"; };
+		5A0246341BC274F500E07172 /* amqp_framing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amqp_framing.h; sourceTree = "<group>"; };
+		5A0246351BC274F500E07172 /* amqp_ssl_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amqp_ssl_socket.h; sourceTree = "<group>"; };
+		5A0246361BC274F500E07172 /* amqp_tcp_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amqp_tcp_socket.h; sourceTree = "<group>"; };
+		5A0246371BC274F500E07172 /* librabbitmq.4.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = librabbitmq.4.1.1.dylib; sourceTree = "<group>"; };
+		5A02463E1BC2758200E07172 /* amqp-ext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "amqp-ext.c"; sourceTree = "<group>"; };
+		5A02463F1BC2758200E07172 /* amqp-ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "amqp-ext.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A02463C1BC274F500E07172 /* librabbitmq.4.1.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A0246211BC273F900E07172 /* RabbitMQ.framework in Frameworks */,
+				5A0246421BC276FE00E07172 /* librabbitmq.4.1.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +73,7 @@
 				5A0246181BC273F800E07172 /* RabbitMQ */,
 				5A0246241BC273F900E07172 /* RabbitMQTests */,
 				5A0246171BC273F800E07172 /* Products */,
+				5A0246301BC274F500E07172 /* External */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +89,7 @@
 		5A0246181BC273F800E07172 /* RabbitMQ */ = {
 			isa = PBXGroup;
 			children = (
+				5A02463D1BC2757400E07172 /* Source */,
 				5A0246191BC273F800E07172 /* RabbitMQ.h */,
 				5A02461B1BC273F800E07172 /* Info.plist */,
 			);
@@ -86,6 +105,43 @@
 			path = RabbitMQTests;
 			sourceTree = "<group>";
 		};
+		5A0246301BC274F500E07172 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				5A0246311BC274F500E07172 /* rabbitmq-c */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		5A0246311BC274F500E07172 /* rabbitmq-c */ = {
+			isa = PBXGroup;
+			children = (
+				5A0246321BC274F500E07172 /* include */,
+				5A0246371BC274F500E07172 /* librabbitmq.4.1.1.dylib */,
+			);
+			path = "rabbitmq-c";
+			sourceTree = "<group>";
+		};
+		5A0246321BC274F500E07172 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				5A0246331BC274F500E07172 /* amqp.h */,
+				5A0246341BC274F500E07172 /* amqp_framing.h */,
+				5A0246351BC274F500E07172 /* amqp_ssl_socket.h */,
+				5A0246361BC274F500E07172 /* amqp_tcp_socket.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		5A02463D1BC2757400E07172 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5A02463E1BC2758200E07172 /* amqp-ext.c */,
+				5A02463F1BC2758200E07172 /* amqp-ext.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A02461A1BC273F800E07172 /* RabbitMQ.h in Headers */,
+				5A0246411BC2758200E07172 /* amqp-ext.h in Headers */,
+				5A0246391BC274F500E07172 /* amqp_framing.h in Headers */,
+				5A0246381BC274F500E07172 /* amqp.h in Headers */,
+				5A02463A1BC274F500E07172 /* amqp_ssl_socket.h in Headers */,
+				5A02463B1BC274F500E07172 /* amqp_tcp_socket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0246401BC2758200E07172 /* amqp-ext.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +280,7 @@
 		5A0246281BC273F900E07172 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -263,7 +325,7 @@
 		5A0246291BC273F900E07172 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -301,6 +363,7 @@
 		5A02462B1BC273F900E07172 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -310,6 +373,10 @@
 				INFOPLIST_FILE = RabbitMQ/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/External/rabbitmq-c",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.feinstruktur.RabbitMQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -319,6 +386,7 @@
 		5A02462C1BC273F900E07172 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -328,6 +396,10 @@
 				INFOPLIST_FILE = RabbitMQ/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/External/rabbitmq-c",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.feinstruktur.RabbitMQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -340,6 +412,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RabbitMQTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/External/rabbitmq-c",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.feinstruktur.RabbitMQTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +427,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RabbitMQTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/External/rabbitmq-c",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.feinstruktur.RabbitMQTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -375,6 +455,7 @@
 				5A02462C1BC273F900E07172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A02462D1BC273F900E07172 /* Build configuration list for PBXNativeTarget "RabbitMQTests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +464,7 @@
 				5A02462F1BC273F900E07172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
