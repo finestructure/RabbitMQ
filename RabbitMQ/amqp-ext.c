@@ -13,3 +13,8 @@ amqp_rpc_reply_t amqp_login_with_credentials(amqp_connection_state_t state, char
                                              amqp_sasl_method_enum sasl_method, const char * user, const char * password) {
     return amqp_login(state, vhost, channel_max, frame_max, heartbeat, sasl_method, user, password);
 }
+
+
+amqp_method_t payload_method(amqp_frame_t *frame) {
+    return frame->payload.method;
+}
