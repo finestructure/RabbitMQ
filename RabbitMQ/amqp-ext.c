@@ -100,3 +100,8 @@ amqp_array_t field_value_array(amqp_field_value_t v) {
 }
 
 
+void set_field_value_bytes(amqp_field_value_t *v, amqp_bytes_t new_value) {
+    v->kind = AMQP_FIELD_KIND_BYTES;
+    v->value.bytes = new_value;
+}
+
