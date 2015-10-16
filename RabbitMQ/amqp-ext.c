@@ -18,3 +18,8 @@ amqp_rpc_reply_t amqp_login_with_credentials(amqp_connection_state_t state, char
 amqp_method_t payload_method(amqp_frame_t *frame) {
     return frame->payload.method;
 }
+
+
+amqp_basic_deliver_t *method_decoded(amqp_frame_t * frame) {
+    return frame->payload.method.decoded;
+}

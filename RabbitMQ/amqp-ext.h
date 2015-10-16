@@ -17,7 +17,8 @@ amqp_rpc_reply_t amqp_login_with_credentials(amqp_connection_state_t state, char
                                              int channel_max, int frame_max, int heartbeat,
                                              amqp_sasl_method_enum sasl_method, const char * user, const char * password);
 
-// make union struct accessible from Swift
+// make union structs accessible from Swift
 amqp_method_t payload_method(amqp_frame_t *frame);
+amqp_basic_deliver_t *method_decoded(amqp_frame_t *frame);
 
 #endif /* HastyHare_amqp_ext_h */
