@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5A02461A1BC273F800E07172 /* RabbitMQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0246191BC273F800E07172 /* RabbitMQ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A0246211BC273F900E07172 /* RabbitMQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0246161BC273F800E07172 /* RabbitMQ.framework */; settings = {ASSET_TAGS = (); }; };
+		5A0246211BC273F900E07172 /* RabbitMQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0246161BC273F800E07172 /* RabbitMQ.framework */; };
 		5A0246261BC273F900E07172 /* RabbitMQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0246251BC273F900E07172 /* RabbitMQTests.m */; };
 		5A0246381BC274F500E07172 /* amqp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0246331BC274F500E07172 /* amqp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A0246391BC274F500E07172 /* amqp_framing.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0246341BC274F500E07172 /* amqp_framing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A02463A1BC274F500E07172 /* amqp_ssl_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0246351BC274F500E07172 /* amqp_ssl_socket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A02463B1BC274F500E07172 /* amqp_tcp_socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0246361BC274F500E07172 /* amqp_tcp_socket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A02463C1BC274F500E07172 /* librabbitmq.4.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0246371BC274F500E07172 /* librabbitmq.4.1.1.dylib */; settings = {ASSET_TAGS = (); }; };
-		5A0246401BC2758200E07172 /* amqp-ext.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A02463E1BC2758200E07172 /* amqp-ext.c */; settings = {ASSET_TAGS = (); }; };
+		5A02463C1BC274F500E07172 /* librabbitmq.4.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0246371BC274F500E07172 /* librabbitmq.4.1.1.dylib */; };
+		5A0246401BC2758200E07172 /* amqp-ext.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A02463E1BC2758200E07172 /* amqp-ext.c */; };
 		5A0246411BC2758200E07172 /* amqp-ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A02463F1BC2758200E07172 /* amqp-ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A0246421BC276FE00E07172 /* librabbitmq.4.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0246371BC274F500E07172 /* librabbitmq.4.1.1.dylib */; };
 /* End PBXBuildFile section */
@@ -280,7 +280,7 @@
 		5A0246281BC273F900E07172 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -325,7 +325,7 @@
 		5A0246291BC273F900E07172 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -363,7 +363,6 @@
 		5A02462B1BC273F900E07172 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,7 +385,6 @@
 		5A02462C1BC273F900E07172 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
